@@ -47,7 +47,7 @@ class Song
   end 
   
   def self.new_from_filename("Taylor Swift - Blank Space.mp3")
-    
+    self.all.each do 
   end 
   
   def self.create_from_filename
