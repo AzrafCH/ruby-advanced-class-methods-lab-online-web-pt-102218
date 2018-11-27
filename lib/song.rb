@@ -47,8 +47,8 @@ class Song
   end 
   
   def self.new_from_filename
-    self.all.each do |filename|
-      filename.name = 
+    self.all.each do |file|
+      file.name = file.name.split(" ").collect{|w| w.capitalize}.join(" ")
   end 
   
   def self.create_from_filename
