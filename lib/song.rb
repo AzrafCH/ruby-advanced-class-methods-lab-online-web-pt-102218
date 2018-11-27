@@ -44,7 +44,6 @@ class Song
     @@all.sort do |a, b|
       a <=> b 
     end 
-      
   end 
   
   def self.destroy_all
