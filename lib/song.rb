@@ -46,9 +46,9 @@ class Song
     end 
   end 
   
-  def self.new_from_filename(name)
+  def self.new_from_filename
     self.all.each do |filename|
-      
+      filename.name = 
   end 
   
   def self.create_from_filename
