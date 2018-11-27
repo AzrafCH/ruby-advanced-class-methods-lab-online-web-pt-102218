@@ -53,12 +53,12 @@ class Song
     song
   end
   
-  def self.create_from_filename
-     c = self.new 
-    c.name = mp3_formatted_file.split(/[^a-zA-Z\s]|\s-\s/)[1] 
-    c.artist_name = mp3_formatted_file.split(/[^a-zA-Z\s]|\s-\s/)[0]
-    c.save
-    c
+  def self.create_from_filename(mp3_formatted_file)
+    song = self.new 
+    song.name = mp3_formatted_file.split(/[^a-zA-Z\s]|\s-\s/)[1] 
+    song.artist_name = mp3_formatted_file.split(/[^a-zA-Z\s]|\s-\s/)[0]
+    song.save
+    song
   end 
   
   def self.destroy_all
