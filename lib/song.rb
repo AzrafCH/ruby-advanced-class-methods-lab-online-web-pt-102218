@@ -46,7 +46,7 @@ class Song
     end 
   end 
   
-  def self.new_from_filename
+  def self.new_from_filename(mp3_formatted_file)
     self.all.each do |file|
       file.name = file.name.split(" ").collect{|w| w.capitalize}.join(" ")
   end 
